@@ -1,3 +1,4 @@
+"use client"
 import { motion } from "framer-motion";
 
 const container = {
@@ -26,14 +27,11 @@ export default function Hero() {
         animate="show"
         className="flex-1 justify-center text-center space-y-6"
       >
-        <motion.h1
-          variants={container}
-          className="text-4xl md:text-8xl font-bold"
-        >
+        <motion.h1 variants={item} className="text-4xl md:text-8xl font-bold">
           Hi, I’m <span className="text-blue-600">Divyansh</span>
         </motion.h1>
         <motion.h2
-          variants={container}
+          variants={item}
           className="text-xl md:text-5xl text-gray-600"
         >
           Full Stack Developer
@@ -41,7 +39,7 @@ export default function Hero() {
 
         {/* CTA Buttons */}
         <motion.div
-          variants={container}
+          variants={item}
           className="flex flex-col md:flex-row gap-4 justify-center "
         >
           <a
