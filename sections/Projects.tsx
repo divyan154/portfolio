@@ -9,7 +9,7 @@ export default function Projects() {
       title: "YelpCamp",
       description:
         "A full-stack web app where users can create, review, and browse campgrounds.",
-      image: "/yelpcamp.png",
+      image: "/projects/yelpcamp.png",
       tech: ["Node.js", "Express", "MongoDB", "AWS"],
       link: "https://yelp-camp-ttec-bebtvss9l-divyan154s-projects.vercel.app/",
       github: "https://github.com/divyan154/yelpcamp",
@@ -18,7 +18,7 @@ export default function Projects() {
       title: "Ai blog Application",
       description:
         "A full stack app which leverages Gemini Api to generate blogs.",
-      image: "/aiapp.png",
+      image: "/projects/aiapp.png",
       tech: ["Next.js", "Clerk", "AppWrite", "Tailwind CSS"],
       link: "https://aiblog-app-taupe.vercel.app/",
       github: "https://github.com/divyan154/aiblogApp",
@@ -26,7 +26,7 @@ export default function Projects() {
     {
       title: "Learning Management System",
       description: "A Platform like udemy Where anyone can learn anything.",
-      image: "/lms.png",
+      image: "/projects/lms.png",
       tech: ["Node.js", "Express", "MongoDB", "Tailwind CSS"],
       link: "https://learning-management-system-sepia-one.vercel.app/",
       github: "https://github.com/divyan154/learning-management-system",
@@ -35,7 +35,7 @@ export default function Projects() {
       title: "Job Board",
       description:
         "A centralized platform where employers can post a job and seekers can apply to a job.",
-      image: "/jobboard.png",
+      image: "/projects/jobboard.png",
       tech: ["Next.js", "Prisma", "Supabase", "Tailwind CSS"],
       link: "https://job-board-puce-six.vercel.app/",
       github: "https://github.com/divyan154/job-board",
