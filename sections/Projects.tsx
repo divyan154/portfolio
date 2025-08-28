@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import ProjectCard from "../components/ProjectCard";
 
 export default function Projects() {
@@ -42,12 +45,39 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen px-6 md:px-10 lg:px-20 py-20"
+      className="min-h-screen py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-gray-50 to-white"
     >
-      <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
-      <div className="grid md:grid-cols-2 gap-10 max-w-[90rem] mx-auto">
+      {/* Header Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="text-center mb-16"
+      >
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-700">
+          My Projects
+        </h2>
+        <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+          Here are some of the projects I’ve built — showcasing my skills in
+          full-stack development, modern frameworks, and real-world problem
+          solving.
+        </p>
+      </motion.div>
+
+      {/* Projects Grid */}
+      <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto items-stretch">
         {projects.map((project, index) => (
-          <ProjectCard key={index} {...project} />
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.1 }}
+            viewport={{ once: true }}
+            className="w-full"
+          >
+            <ProjectCard {...project} />
+          </motion.div>
         ))}
       </div>
     </section>

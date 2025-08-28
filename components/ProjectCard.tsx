@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import TechStack from "./TechStack";
+
 interface ProjectCardProps {
   title: string;
   description: string;
@@ -26,15 +27,15 @@ const ProjectCard = ({
       viewport={{ once: true }}
       whileHover={{
         scale: 1.03,
-        boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.15)", // animate shadow too
+        boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.15)",
       }}
       transition={{
         type: "spring",
         stiffness: 200,
         damping: 15,
-        duration: 0.3, // smooth in-out
+        duration: 0.3,
       }}
-      className="bg-white rounded-2xl overflow-hidden flex flex-col"
+      className="h-full bg-white rounded-2xl overflow-hidden flex flex-col shadow-lg border border-gray-200"
     >
       {/* Project Image */}
       <div className="relative w-full aspect-[16/9]">
@@ -42,7 +43,7 @@ const ProjectCard = ({
       </div>
 
       {/* Project Content */}
-      <div className="p-5 flex flex-col flex-1">
+      <div className="p-6 flex flex-col flex-1">
         <h3 className="text-gray-800 text-xl font-semibold mb-2">{title}</h3>
         <p className="text-gray-600 text-md flex-1">{description}</p>
 
@@ -55,7 +56,7 @@ const ProjectCard = ({
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm hover:bg-blue-700 transition"
+            className="px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-lg text-sm font-medium hover:opacity-90 transition"
           >
             Live Demo
           </a>
@@ -63,7 +64,7 @@ const ProjectCard = ({
             href={github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-500 px-4 py-2 border border-gray-400 rounded-lg text-sm hover:bg-gray-100 transition"
+            className="text-gray-700 px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-100 transition"
           >
             Github
           </a>

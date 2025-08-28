@@ -43,7 +43,7 @@ export default function TechStack({ tech }: { tech: string[] }) {
           key={i}
           className="flex items-center gap-2 px-3 py-2 bg-gray-100 rounded-md shadow-sm"
         >
-          {techIcons[t] || <span className="text-gray-400">?</span>}
+          {techIcons[t]}
           <span className="text-gray-700 text-sm font-medium">{t}</span>
         </div>
       ))}
