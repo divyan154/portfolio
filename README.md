@@ -86,9 +86,9 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 ├── next.config.js        # Next.js configuration
 ├── package.json
 └── README.md
-
+```
 ---
-## 🤝 Contributing
+### 🤝 Contributing
 Feedback, suggestions, and contributions are welcome!
 
 1.  Fork the repo
