@@ -41,3 +41,14 @@ This project showcases my skills, projects, and professional background, built w
 ![Home Page](public/screenshots/heross.png)
 ![Projects Section](public/screenshots/projectsss.png)
 
+
+🚀 Getting Started
+Prerequisites
+
+Node.js (v14+ recommended)
+
+npm, yarn, or pnpm
+
+Installation
+
+Clone the repository:
