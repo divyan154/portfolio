@@ -1,3 +1,4 @@
+import React from "react";
 import {
   FaReact,
   FaNodeJs,
@@ -17,7 +18,7 @@ import {
   SiClerk,
 } from "react-icons/si";
 import { RiSupabaseFill } from "react-icons/ri";
-const techIcons: Record<string, JSX.Element> = {
+const techIcons: Record<string, React.ReactNode> = {
   React: <FaReact className="text-blue-500 text-2xl" />,
   "Next.js": <SiNextdotjs className="text-black text-2xl" />,
   "Node.js": <FaNodeJs className="text-green-600 text-2xl" />,
