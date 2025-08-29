@@ -55,7 +55,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
     
     git clone [https://github.com/divyan154/portfolio.git](https://github.com/divyan154/portfolio.git)
     cd portfolio
-    ```
+ 
 2.  **Install dependencies:**
    
     npm install
@@ -66,7 +66,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
     NEXT_PUBLIC_EMAILJS_SERVICE_ID=your_service_id
     NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your_template_id
     NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your_public_key
-    ```
+    
 4.  **Run the development server:**
     
     npm run dev
@@ -76,7 +76,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 ---
 
 ## 📂 Folder Structure
-
+```ruby
 
 ├── app/                  # Main layout & pages
 ├── components/           # Reusable React components
