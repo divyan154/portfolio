@@ -38,6 +38,6 @@ This project showcases my skills, projects, and professional background, built w
 
 
 ```markdown
-![Home Page](public/screenshots/home.png)
-![Projects Section](public/screenshots/projects.png)
+![Home Page](public/screenshots/heross.png)
+![Projects Section](public/screenshots/projectsss.png)
 
