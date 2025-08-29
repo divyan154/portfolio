@@ -53,7 +53,7 @@ Welcome to my personal portfolio website! This project showcases my skills, proj
 
 1.  **Clone the repository:**
     
-    git clone [https://github.com/divyan154/portfolio.git](https://github.com/divyan154/portfolio.git)
+    git clone [https://github.com/divyan154/portfolio.git](https://github.com/divyan154/portfolio.git) <br>
     cd portfolio
  
 2.  **Install dependencies:**
