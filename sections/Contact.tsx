@@ -53,7 +53,7 @@ export default function ContactForm() {
           Get In Touch
         </h2>
         <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-          Let's discuss your next project or just say hello! I'm always open to
+          Let&apos;s discuss your next project or just say hello! I&apos;m always open to
           new opportunities and interesting conversations.
         </p>
       </motion.div>
@@ -72,7 +72,7 @@ export default function ContactForm() {
             Contact Me
           </h2>
           <p className="text-gray-600 mb-8 text-center md:text-left max-w-md text-lg leading-relaxed">
-            Feel free to send me a message, I'll get back to you as soon as
+            Feel free to send me a message, I&apos;ll get back to you as soon as
             possible! You can also reach me through my social media.
           </p>
 

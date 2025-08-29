@@ -36,7 +36,7 @@ export default function Hero() {
             variants={item}
             className="text-5xl md:text-7xl lg:text-8xl font-bold text-gray-800"
           >
-            Hi, I'm{" "}
+            Hi, I&apos;m{" "}
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-700">
               Divyansh
             </span>
