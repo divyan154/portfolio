@@ -63,7 +63,7 @@ export default function AboutPage() {
           {/* Resume Button */}
           <div className="mt-6">
             <a
-              href="https://drive.google.com/file/d/1XNwrf_90nmD9DV_7F4zRr2qrPpoDF-4A/view?usp=sharing"
+              href="https://drive.google.com/file/d/1ZMTxNKkKLGguuQJAzdFXiGIhB6srDgHo/view?usp=drivesdk"
               download
               className="flex items-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg shadow hover:bg-indigo-700 transition"
               target="_blank"
