@@ -43,30 +43,34 @@ export default function AboutPage() {
           <p className="text-text-secondary mb-6 leading-relaxed">
             AI Full-Stack Engineer building production-ready software and
             integrating AI into real-world applications. Currently at{" "}
-            <span className="font-semibold text-accent-primary">Zintellix</span>,
-            working on RAG agents, data connectors, and AI-powered features. My
-            interests lie in
+            <span className="font-semibold text-accent-primary">Zintellix</span>
+            , working on RAG agents, data connectors, and AI-powered features.
+            My interests lie in
             <span className="font-semibold text-accent-primary">
-              {" "}full stack development
+              {" "}
+              full stack development
             </span>
             ,{" "}
             <span className="font-semibold text-accent-secondary">
               AI engineering
             </span>
             , and{" "}
-            <span className="font-semibold text-purple-400">distributed systems</span>.
+            <span className="font-semibold text-purple-400">
+              distributed systems
+            </span>
+            .
           </p>
 
           <p className="text-text-muted">
             I graduated from IIT (ISM) Dhanbad in 2024. I work extensively with
             FastAPI, Next.js, Node.js, Go, PostgreSQL, MongoDB, Docker, and AWS.
-            Apart from engineering, I have a deep interest in Japanese language and
-            playing sports.
+            Apart from engineering, I have a deep interest in Japanese language
+            and playing sports.
           </p>
 
           <div className="mt-6">
             <a
-              href="https://drive.google.com/file/d/1ZMTxNKkKLGguuQJAzdFXiGIhB6srDgHo/view?usp=drivesdk"
+              href="https://drive.google.com/file/d/1ZM9viodw82nqNvBBrttODzlwd5f5s8Wf/view?usp=sharing"
               target="_blank"
               className="inline-flex items-center gap-2 px-5 py-2.5 border border-accent-primary text-accent-primary rounded-lg font-medium hover:bg-accent-primary/10 transition-colors duration-200"
             >
