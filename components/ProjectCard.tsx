@@ -1,4 +1,5 @@
 "use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 import TechStack from "./TechStack";
@@ -22,41 +23,34 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
       whileHover={{
-        scale: 1.03,
-        boxShadow: "0px 10px 30px rgba(0, 0, 0, 0.15)",
+        scale: 1.02,
+        boxShadow: "0 0 24px var(--accent-glow)",
       }}
       transition={{
         type: "spring",
         stiffness: 200,
         damping: 15,
-        duration: 0.3,
       }}
-      className="h-full bg-white rounded-2xl overflow-hidden flex flex-col shadow-lg border border-gray-200"
+      className="h-full glass-card overflow-hidden flex flex-col"
     >
-      {/* Project Image */}
       <div className="relative w-full aspect-[16/9]">
         <Image src={image} alt={title} fill className="object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-t from-surface-1/80 to-transparent" />
       </div>
 
-      {/* Project Content */}
       <div className="p-6 flex flex-col flex-1">
-        <h3 className="text-gray-800 text-xl font-semibold mb-2">{title}</h3>
-        <p className="text-gray-600 text-md flex-1">{description}</p>
+        <h3 className="text-text-primary text-xl font-semibold mb-2">{title}</h3>
+        <p className="text-text-secondary text-md flex-1">{description}</p>
 
-        {/* Tech Stack */}
         <TechStack tech={tech} />
 
-        {/* Links */}
         <div className="flex gap-3 mt-auto">
           <a
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-lg text-sm font-medium hover:opacity-90 transition"
+            className="px-4 py-2 bg-gradient-to-r from-accent-primary to-accent-secondary text-background rounded-lg text-sm font-medium hover:opacity-90 transition"
           >
             Live Demo
           </a>
@@ -64,7 +58,7 @@ const ProjectCard = ({
             href={github}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-700 px-4 py-2 border border-gray-300 rounded-lg text-sm font-medium hover:bg-gray-100 transition"
+            className="text-text-secondary px-4 py-2 border border-glass-border rounded-lg text-sm font-medium hover:border-accent-primary hover:text-accent-primary transition"
           >
             Github
           </a>

@@ -3,51 +3,59 @@
 import { motion } from "framer-motion";
 import ProjectCard from "../components/ProjectCard";
 
-export default function Projects() {
-  const projects = [
-    {
-      title: "YelpCamp",
-      description:
-        "A full-stack web app where users can create, review, and browse campgrounds.",
-      image: "/projects/yelpcamp.png",
-      tech: ["Node.js", "Express", "MongoDB", "AWS"],
-      link: "https://yelp-camp-ttec-bebtvss9l-divyan154s-projects.vercel.app/",
-      github: "https://github.com/divyan154/yelpcamp",
-    },
-    {
-      title: "Ai blog Application",
-      description:
-        "A full stack app which leverages Gemini Api to generate blogs.",
-      image: "/projects/aiapp.png",
-      tech: ["Next.js", "Clerk", "AppWrite", "Tailwind CSS"],
-      link: "https://aiblog-app-taupe.vercel.app/",
-      github: "https://github.com/divyan154/aiblogApp",
-    },
-    {
-      title: "Learning Management System",
-      description: "A Platform like udemy Where anyone can learn anything.",
-      image: "/projects/lms.png",
-      tech: ["Node.js", "Express", "MongoDB", "Tailwind CSS"],
-      link: "https://learning-management-system-sepia-one.vercel.app/",
-      github: "https://github.com/divyan154/learning-management-system",
-    },
-    {
-      title: "Job Board",
-      description:
-        "A centralized platform where employers can post a job and seekers can apply to a job.",
-      image: "/projects/jobboard.png",
-      tech: ["Next.js", "Prisma", "Supabase", "Tailwind CSS"],
-      link: "https://job-board-puce-six.vercel.app/",
-      github: "https://github.com/divyan154/job-board",
-    },
-  ];
+const projects = [
+  {
+    title: "Document AI — Chat With PDF",
+    description:
+      "A production-grade Full-Stack RAG system enabling semantic search across PDFs using LLMs, vector embeddings, and Qdrant. Features async job processing with BullMQ and context-aware Q&A.",
+    image: "/projects/documind-ai.png",
+    tech: ["Next.js", "Express", "LangChain", "Docker", "BullMQ"],
+    link: "https://github.com/divyan154/rag-pdf",
+    github: "https://github.com/divyan154/rag-pdf",
+  },
+  {
+    title: "AI Blog Application",
+    description:
+      "A full stack app which leverages Gemini API to generate blogs.",
+    image: "/projects/aiapp.png",
+    tech: ["Next.js", "Clerk", "AppWrite", "Tailwind CSS"],
+    link: "https://aiblog-app-taupe.vercel.app/",
+    github: "https://github.com/divyan154/aiblogApp",
+  },
+  {
+    title: "YelpCamp",
+    description:
+      "A full-stack web app where users can create, review, and browse campgrounds. Integrated AWS S3 for storage and secured with Passport.js.",
+    image: "/projects/yelpcamp.png",
+    tech: ["Node.js", "Express", "MongoDB", "AWS"],
+    link: "https://github.com/divyan154/yelpcamp",
+    github: "https://github.com/divyan154/yelpcamp",
+  },
+  {
+    title: "Learning Management System",
+    description: "A platform like Udemy where anyone can learn anything.",
+    image: "/projects/lms.png",
+    tech: ["Node.js", "Express", "MongoDB", "Tailwind CSS"],
+    link: "https://github.com/divyan154/learning-management-system",
+    github: "https://github.com/divyan154/learning-management-system",
+  },
+  {
+    title: "Job Board",
+    description:
+      "A centralized platform where employers can post jobs and seekers can apply.",
+    image: "/projects/jobboard.png",
+    tech: ["Next.js", "Prisma", "Supabase", "Tailwind CSS"],
+    link: "https://github.com/divyan154/job-board",
+    github: "https://github.com/divyan154/job-board",
+  },
+];
 
+export default function Projects() {
   return (
     <section
       id="projects"
-      className="min-h-screen py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-gray-50 to-white"
+      className="py-20 px-4 md:px-8 lg:px-16"
     >
-      {/* Header Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -55,18 +63,16 @@ export default function Projects() {
         viewport={{ once: true }}
         className="text-center mb-16"
       >
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-700">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
           My Projects
         </h2>
-        <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-          Here are some of the projects I’ve built — showcasing my skills in
-          full-stack development, modern frameworks, and real-world problem
-          solving.
+        <p className="text-text-secondary text-lg max-w-2xl mx-auto">
+          Here are some of the projects I&apos;ve built — showcasing my skills in
+          full-stack development, AI engineering, and real-world problem solving.
         </p>
       </motion.div>
 
-      {/* Projects Grid */}
-      <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto items-stretch">
+      <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto items-stretch">
         {projects.map((project, index) => (
           <motion.div
             key={index}
